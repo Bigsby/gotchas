@@ -3,16 +3,25 @@
 
 <head>
     <title>Gotchas by Bigsby</title>
-    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="//cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/base16/material-darker.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Gotchas</h1>
+
+        <a href="/">
+            <span class="header-gotchas">Gotchas</span>
+            <span id="header-title"></span>
+        </a>
     </header>
-    <section>
-        <p>Thing good to learn or recall.<p>
+    <section id="contentContainer">
     </section>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

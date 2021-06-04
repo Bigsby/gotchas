@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    color: #e0e0e0;
+}
+
+header {
+    padding: 10px;
+}
+
+header .header-gotchas {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+header .header-title {
+    font-size: 1.5em;
+}
+
+a, a:visited {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+#contentContainer {
+    padding: 15px;
+}
+
+pre {
+    padding: 5px;
+    border: slategray 1px solid;
+}
