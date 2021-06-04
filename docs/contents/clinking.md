@@ -19,7 +19,7 @@ $ ./hello
 Hello, world!
 ```
 
-One would thing the _only_ content on the resulting _hello_ file would be the _main_ function but that is far for truth. Let's see what [nm](https://linux.die.net/man/1/nm) has to show:
+One would think the _only_ content on the resulting _hello_ file would be the _main_ function but not so much. Let's see what [nm](https://linux.die.net/man/1/nm) has to show:
 ```sh
 $ nm hello
 0000000000004030 B __bss_start
@@ -57,11 +57,13 @@ $ nm hello
 0000000000004030 D __TMC_END__
 ```
 
-That's a mouthful... but this is just a dynamically linked executable, as [gcc](https://linux.die.net/man/1/gcc) does by default. That is because [gcc](https://linux.die.net/man/1/gcc) links by default. As [file](https://linux.die.net/man/1/file) can show us:
+That's a mouthful... but this is just a dynamically linked executable, as [gcc](https://linux.die.net/man/1/gcc) does by default. That is because [gcc](https://linux.die.net/man/1/gcc) generates an executable by default, and links dynamically by default. As [file](https://linux.die.net/man/1/file) can show us:
 ```sh
 $ file hello
 hello: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=16447818ee8a943c740e798502de69368488fbc4, not stripped
 ```
+
+## The Process
 
 [gcc](https://linux.die.net/man/1/gcc) is, in fact, a frontend that streamlines the whole process of going from **C** files to a usable binary, i.e., an executable, or a library. The process consists of:
 - Preprocessing - resolve and replace macros, e.g., _#include_, _#define_
