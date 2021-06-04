@@ -12,7 +12,7 @@
     },
     {
         "id": "clinking",
-        "name": "C Symbols and Linking",
+        "name": "C Compiling and Linking Process",
         "tags": [ "C", "ld", "gcc" ],
         "isMarkdown": true
     }

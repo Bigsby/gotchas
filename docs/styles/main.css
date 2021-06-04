@@ -28,16 +28,26 @@ header .header-title {
     font-size: 1.5em;
 }
 
-a, a:visited {
+header a, header a:visited {
     color: #e0e0e0;
     text-decoration: none;
 }
 
 #contentContainer {
-    padding: 15px;
+    padding: 15px 60px;
+}
+
+#contentContainer a, #contentContainer a:visited {
+    color: cadetblue;
 }
 
 pre {
     padding: 5px;
     border: slategray 1px solid;
+    background-color: #151515;
+    overflow-x: auto;
+}
+
+pre code {
+    word-wrap: normal;
 }

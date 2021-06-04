@@ -19,14 +19,14 @@ async function fetchData() {
 async function displayNewContent() {
     if (!window.gotchas)
         window.gotchas = await fetchData()
-    let reaquestId = window.location.hash ? window.location.hash.substr(1) : HOME
+    const reaquestId = window.location.hash ? window.location.hash.substr(1) : HOME
     if (!window.gotchas.filter(gotcha => gotcha.id === reaquestId).length)
         reaquestId = HOME
-    let gotcha = window.gotchas.find(gotcha => gotcha.id === reaquestId);
-    let content = await (await fetch(`contents/${gotcha.id}.${gotcha.isMarkdown ? "md" : "html"}`)).text()
+    const gotcha = window.gotchas.find(gotcha => gotcha.id === reaquestId);
+    const content = await (await fetch(`contents/${gotcha.id}.${gotcha.isMarkdown ? "md" : "html"}`)).text()
     contentContainer.innerHTML = gotcha.isMarkdown ? marked(content) : content
     window.document.title = `Gotchas - ${gotcha.name}`;
-    titleContainer.innerText = reaquestId === HOME ? "Things to learn or recall" : gotcha.name;
+    titleContainer.innerText = reaquestId === HOME ? "Things to learn or recall" : gotcha.name
     if (reaquestId === HOME)
         populateHome()
 }
@@ -34,8 +34,8 @@ async function displayNewContent() {
 marked.setOptions({
     renderer: new marked.Renderer(),
     highlight: function (code, lang, callback) {
-        const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-        return hljs.highlight(code, { language }).value;
+        const language = hljs.getLanguage(lang) ? lang : 'plaintext'
+        return hljs.highlight(code, { language }).value
     },
     pedantic: false,
     gfm: true,
