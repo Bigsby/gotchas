@@ -57,16 +57,16 @@ $ nm hello
 0000000000004030 D __TMC_END__
 ```
 
-That's a mouthful... but this is just an executable dynamically linked, as [gcc](https://linux.die.net/man/1/gcc) does by default. That is becuase [gcc](https://linux.die.net/man/1/gcc) links by default. As [file](https://linux.die.net/man/1/file) can show us:
+That's a mouthful... but this is just a dynamically linked executable, as [gcc](https://linux.die.net/man/1/gcc) does by default. That is because [gcc](https://linux.die.net/man/1/gcc) links by default. As [file](https://linux.die.net/man/1/file) can show us:
 ```sh
 $ file hello
 hello: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=16447818ee8a943c740e798502de69368488fbc4, not stripped
 ```
 
 [gcc](https://linux.die.net/man/1/gcc) is, in fact, a frontend that streamlines the whole process of going from **C** files to a usable binary, i.e., an executable, or a library. The process consists of:
-- Preprocessing
-- Compilation
-- Assembling
-- Linking
+- Preprocessing - resolve and replace macros, e.g., _#include_, _#define_
+- Compilation - transpile *C* into assembly code
+- Assembling - compile assembly code into a binary
+- Linking - link the binary to all the references, i.e., resolve of the references
 
 Let's go though all those...coming up!...
