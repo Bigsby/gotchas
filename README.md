@@ -1,2 +1,2 @@
 # gotchas
-Things  good to learn, remember or recall.
+Things good to learn or recall.
