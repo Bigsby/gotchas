@@ -5,8 +5,8 @@
         "tags": []
     },
     {
-        "id": "another",
-        "name": "Another",
+        "id": "test",
+        "name": "Tests",
         "tags": [],
         "isMarkdown": true
     },
