@@ -22,9 +22,11 @@ header .header-gotchas {
     font-size: 2em;
     font-weight: bold;
     margin-right: 20px;
+    border-top: slategray 1px solid;
+    border-bottom: slategray 1px solid;
 }
 
-header .header-title {
+header #header-title {
     font-size: 1.5em;
 }
 
@@ -35,6 +37,16 @@ header a, header a:visited {
 
 #contentContainer {
     padding: 15px 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    #contentContainer {
+        padding: 10px;
+    }
 }
 
 #contentContainer a, #contentContainer a:visited {
