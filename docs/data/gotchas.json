@@ -15,5 +15,11 @@
         "name": "C Compiling and Linking Process",
         "tags": [ "C", "ld", "gcc" ],
         "isMarkdown": true
+    },
+    {
+        "id": "macos_sideloading",
+        "name": "Side loading .dylib on macOS",
+        "tags": [ "macOS" ],
+        "isMarkdown": true
     }
 ]
