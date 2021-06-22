@@ -53,9 +53,17 @@ header a, header a:visited {
     color: cadetblue;
 }
 
+p code, li code {
+    padding: 0px 3px;
+    border: slategray 1px solid;
+    border-radius: 5px;
+    background-color: #151515;
+}
+
 pre {
     padding: 5px;
     border: slategray 1px solid;
+    border-radius: 5px;
     background-color: #151515;
     overflow-x: auto;
 }

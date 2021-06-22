@@ -19,7 +19,7 @@ $ ./hello
 Hello, world!
 ```
 
-One would think the _only_ content on the resulting _hello_ file would be the _main_ function but not so much. Let's see what [nm](https://linux.die.net/man/1/nm) has to show:
+One would think the _only_ content on the resulting `hello` file would be the `main` function but not so much. Let's see what [nm](https://linux.die.net/man/1/nm) has to show:
 ```sh
 $ nm hello
 0000000000004030 B __bss_start
@@ -66,7 +66,7 @@ hello: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically link
 ## The Process
 
 [gcc](https://linux.die.net/man/1/gcc) is, in fact, a frontend that streamlines the whole process of going from **C** files to a usable binary, i.e., an executable, or a library. The process consists of:
-- Preprocessing - resolve and replace macros, e.g., _#include_, _#define_
+- Preprocessing - resolve and replace macros, e.g., `#include`, `#define`
 - Compilation - transpile *C* into assembly code
 - Assembling - compile assembly code into a binary
 - Linking - link the binary to all the references, i.e., resolve of the references
