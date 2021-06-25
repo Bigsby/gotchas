@@ -23,7 +23,8 @@ async function displayNewContent() {
     if (!window.gotchas.filter(gotcha => gotcha.id === reaquestId).length)
         reaquestId = HOME
     const gotcha = window.gotchas.find(gotcha => gotcha.id === reaquestId);
-    const content = await (await fetch(`contents/${gotcha.id}.${gotcha.isMarkdown ? "md" : "html"}`)).text()
+    const url = gotcha.url || `contents/${gotcha.id}.${gotcha.isMarkdown ? "md" : "html"}`;
+    const content = await (await fetch(url)).text()
     contentContainer.innerHTML = gotcha.isMarkdown ? marked(content) : content
     window.document.title = `Gotchas - ${gotcha.name}`;
     titleContainer.innerText = reaquestId === HOME ? "Things to learn or recall" : gotcha.name

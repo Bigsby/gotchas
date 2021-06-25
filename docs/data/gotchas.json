@@ -21,5 +21,12 @@
         "name": "Side loading .dylib on macOS",
         "tags": [ "macOS" ],
         "isMarkdown": true
+    },
+    {
+        "id": "cheat-vim",
+        "name": "Vim - Cheatsheet",
+        "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/vim.md",
+        "isMarkdown": true,
+        "tags": [ "Cheatsheet", "vim" ]
     }
 ]
