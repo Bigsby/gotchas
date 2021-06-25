@@ -5,12 +5,6 @@
         "tags": []
     },
     {
-        "id": "test",
-        "name": "Tests",
-        "tags": [],
-        "isMarkdown": true
-    },
-    {
         "id": "clinking",
         "name": "C Compiling and Linking Process",
         "tags": [ "C", "ld", "gcc" ],
@@ -28,5 +22,33 @@
         "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/vim.md",
         "isMarkdown": true,
         "tags": [ "Cheatsheet", "vim" ]
+    },
+    {
+        "id": "cheat-tmux",
+        "name": "Tmux - Cheatsheet",
+        "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/tmux.md",
+        "isMarkdown": true,
+        "tags": [ "Cheatsheet", "Tmux" ]
+    },
+    {
+        "id": "cheat-package-managers",
+        "name": "Linux Package Managers - Cheatsheet",
+        "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/package-managers.md",
+        "isMarkdown": true,
+        "tags": [ "Cheatsheet", "Linux", "Package Managers", "apk", "apt", "apt-ge", "dnf", "pacman", "pkg", "pkgin", "swupd", "xbps", "yum", "zypper" ]
+    },
+    {
+        "id": "cheat-qemu",
+        "name": "Qemu - Cheatsheet",
+        "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/qemu.md",
+        "isMarkdown": true,
+        "tags": [ "Cheatsheet", "Qemu" ]
+    },
+    {
+        "id": "w10-recovery",
+        "name": "Windows 10 Recovery",
+        "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/win10recovery.md",
+        "isMarkdown": true,
+        "tags": [ "Windows", "Windows 10" ]
     }
 ]
