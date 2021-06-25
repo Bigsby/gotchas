@@ -53,7 +53,7 @@ header a, header a:visited {
     color: cadetblue;
 }
 
-p code, li code {
+:not(pre) > code {
     padding: 0px 3px;
     border: slategray 1px solid;
     border-radius: 5px;
@@ -68,6 +68,21 @@ pre {
     overflow-x: auto;
 }
 
-pre code {
-    word-wrap: normal;
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+table tr th {
+    padding: 2px;
+    border-top: slategray 1px solid;
+}
+
+table tr:nth-child(2n) {
+    background-color: #202020;
+}
+
+table td {
+    border: slategray .25px solid;
+    padding: 2px;
 }
