@@ -27,7 +27,7 @@ async function displayNewContent() {
     const content = await (await fetch(url)).text()
     contentContainer.innerHTML = gotcha.isMarkdown ? marked(content) : content
     window.document.title = `Gotchas - ${gotcha.name}`;
-    titleContainer.innerText = reaquestId === HOME ? "Things to learn or recall" : gotcha.name
+    titleContainer.innerText = gotcha.name
     if (reaquestId === HOME)
         populateHome()
 }
