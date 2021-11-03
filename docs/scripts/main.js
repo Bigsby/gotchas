@@ -25,7 +25,7 @@ async function displayNewContent() {
     const gotcha = window.gotchas.find(gotcha => gotcha.id === reaquestId);
     const url = gotcha.url || `contents/${gotcha.id}.${gotcha.isMarkdown ? "md" : "html"}`;
     const content = await (await fetch(url)).text()
-    contentContainer.innerHTML = gotcha.isMarkdown ? marked(content) : content
+    contentContainer.innerHTML = gotcha.isMarkdown ? marked.marked(content) : content
     window.document.title = `Gotchas - ${gotcha.name}`;
     titleContainer.innerText = gotcha.name
     if (reaquestId === HOME)
