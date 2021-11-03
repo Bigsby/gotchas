@@ -50,5 +50,11 @@
         "url": "https://raw.githubusercontent.com/Bigsby/cheatsheets/master/win10recovery.md",
         "isMarkdown": true,
         "tags": [ "Windows", "Windows 10" ]
+    },
+    {
+        "id": "macos_volume_cli",
+        "name": "macOS - Change System Volume in terminal",
+        "isMarkdown": "true",
+        "tags": [ "macOS", "terminal", "cli" ]
     }
 ]
