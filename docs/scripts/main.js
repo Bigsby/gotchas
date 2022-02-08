@@ -28,6 +28,12 @@ async function displayNewContent() {
     contentContainer.innerHTML = gotcha.isMarkdown ? marked.marked(content) : content
     window.document.title = `Gotchas - ${gotcha.name}`;
     titleContainer.innerText = gotcha.name
+    if (gotcha.script) {
+        const script = await (await fetch(`scripts/${gotcha.id}.js`)).text()
+        const newScript = document.createElement("script")
+        newScript.innerHTML = script
+        contentContainer.appendChild(newScript)
+    }
     if (reaquestId === HOME)
         populateHome()
 }

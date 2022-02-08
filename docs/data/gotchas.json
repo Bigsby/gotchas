@@ -5,6 +5,11 @@
         "tags": []
     },
     {
+        "id": "links",
+        "name": "Links",
+        "script" : true
+    },
+    {
         "id": "clinking",
         "name": "C Compiling and Linking Process",
         "tags": [ "C", "ld", "gcc" ],
@@ -54,7 +59,7 @@
     {
         "id": "macos_volume_cli",
         "name": "macOS - Change System Volume in terminal",
-        "isMarkdown": "true",
+        "isMarkdown": true,
         "tags": [ "macOS", "terminal", "cli" ]
     }
 ]
