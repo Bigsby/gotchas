@@ -4,7 +4,6 @@ const HOME = "home";
 
 function populateHome() {
     let theList = document.getElementById("theList")
-    console.log(window.gotchas)
     window.gotchas.forEach(gotcha => {
         if (gotcha.id != HOME)
             theList.innerHTML += `
